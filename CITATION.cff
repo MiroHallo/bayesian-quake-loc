@@ -7,9 +7,9 @@ authors:
     orcid: "https://orcid.org/0000-0001-5865-7767"
 title: "Parallel Bayesian framework for 3D earthquake hypocenter location in 1D layered media"
 abstract: "Robust 3D Bayesian hypocenter localization from body P- and S-wave arrival times in a layered 1D medium including full Uncertainty Quantification."
-version: "2.1.3"
+version: "2.1.4"
 doi: "10.5281/zenodo.19343031"
-date-released: "2026-04-20"
+date-released: "2026-11-11"
 license: GPL-3.0-or-later
 repository-code: "https://github.com/MiroHallo/bayesian-quake-loc"
 keywords:

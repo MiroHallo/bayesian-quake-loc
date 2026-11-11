@@ -144,5 +144,5 @@ If you use this tools suite, please cite both the original methodology paper (pr
 > Hallo, M., Oprsal, I., Asano, K., Gallovic, F. (2019). Seismotectonics of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint movements on strike-slip and reverse faults in inland Japan. Earth, Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://doi.org/10.1186/s40623-019-1016-8)
 
 ### For the specific software version:
-> Hallo, M. (2026). Parallel Bayesian framework for 3D earthquake hypocenter location in 1D layered media (v2.1.3) [Software]. Zenodo. [https://doi.org/10.5281/zenodo.19343031](https://doi.org/10.5281/zenodo.19343031)
+> Hallo, M. (2026). Parallel Bayesian framework for 3D earthquake hypocenter location in 1D layered media (v2.1.4) [Software]. Zenodo. [https://doi.org/10.5281/zenodo.19343031](https://doi.org/10.5281/zenodo.19343031)
 

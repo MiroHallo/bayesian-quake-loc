@@ -524,7 +524,7 @@ set(gca,'Ylim',[-1 6.5])
 axis off
 clim([0, max_p])
 cbh = colorbar('Location', 'southoutside');
-cbh.Label.String = 'Probability';
+cbh.Label.String = 'Probability Mass';
 cbh.Label.FontSize = 10;
 
 ax = gca;
@@ -537,9 +537,12 @@ cbh.Position = [axPos(1), axPos(2)-0.1, axPos(3)*0.6, 0.03];
 
 fih(3) = figure('color','w');
 
-xy2D = squeeze(sum(PDF,3));
-xz2D = squeeze(sum(PDF,2));
-yz2D = squeeze(sum(PDF,1));
+% Normalization of PDF to true density (dx*dy*dz)
+density_PDF = PDF / ((gridX(2)-gridX(1))*(gridY(2)-gridY(1))*(gridZ(2)-gridZ(1)));
+
+xy2D = squeeze(sum(density_PDF,3)) * (gridZ(2)-gridZ(1));
+xz2D = squeeze(sum(density_PDF,2)) * (gridY(2)-gridY(1));
+yz2D = squeeze(sum(density_PDF,1)) * (gridX(2)-gridX(1));
 max_p = max([xy2D(:); xz2D(:); yz2D(:)]);
 
 % plot horizontal slice
@@ -608,7 +611,7 @@ set(gca,'Ylim',[-1 5.5])
 axis off
 clim([0, max_p])
 cbh = colorbar('Location', 'southoutside');
-cbh.Label.String = 'Marginal Probability';
+cbh.Label.String = 'Marginal Probability Density';
 cbh.Label.FontSize = 10;
 
 ax = gca;
